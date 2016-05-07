@@ -1,0 +1,310 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\..\build\packages\directxtk_desktop_2015.2016.4.26.1\build\native\directxtk_desktop_2015.props" Condition="Exists('..\..\build\packages\directxtk_desktop_2015.2016.4.26.1\build\native\directxtk_desktop_2015.props')" />
+  <Import Project="..\packages\directxtk_desktop_2015.2016.4.26.1\build\native\directxtk_desktop_2015.props" Condition="Exists('..\packages\directxtk_desktop_2015.2016.4.26.1\build\native\directxtk_desktop_2015.props')" />
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{834EDF57-068A-47EA-B62C-B0E57DC45A56}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>GameDesktopDirectX</RootNamespace>
+    <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <OutDir>$(ProjectDir)bin\$(Platform)\$(Configuration)\</OutDir>
+    <IntDir>$(ProjectDir)obj\$(Platform)\$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+    <OutDir>$(ProjectDir)bin\$(Platform)\$(Configuration)\</OutDir>
+    <IntDir>$(ProjectDir)obj\$(Platform)\$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <OutDir>$(ProjectDir)bin\$(Platform)\$(Configuration)\</OutDir>
+    <IntDir>$(ProjectDir)obj\$(Platform)\$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+    <OutDir>$(ProjectDir)bin\$(Platform)\$(Configuration)\</OutDir>
+    <IntDir>$(ProjectDir)obj\$(Platform)\$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level4</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+      <TreatWarningAsError>false</TreatWarningAsError>
+      <DisableSpecificWarnings>4201</DisableSpecificWarnings>
+      <AdditionalIncludeDirectories>$(SolutionDir)..\source\Library.Desktop;$(SolutionDir)..\external;$(SolutionDir)..\external\Library\Library;$(SolutionDir)..\external\Expat\include;$(SolutionDir)..\external\glm;$(SolutionDir)..\source\Game.Desktop.Shared;$(SolutionDir)..\external\Box2D\include_2015;$(SolutionDir)..\external\FMOD\inc</AdditionalIncludeDirectories>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <TreatLinkerWarningAsErrors>true</TreatLinkerWarningAsErrors>
+      <AdditionalDependencies>Library.Desktop.lib;Library.lib;d3d11.lib;d3dcompiler.lib;dinput8.lib;dxguid.lib;Shlwapi.lib;Expat.lib;Game.Desktop.Shared.lib;Box2D.lib;fmodL_vc.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(SolutionDir)..\external\Box2D\bin\$(Platform)\$(Configuration)\;$(SolutionDir)..\source\Game.Desktop.Shared\bin\$(Platform)\$(Configuration)\;$(SolutionDir)..\source\Library.Desktop\bin\$(Platform)\$(Configuration)\;$(SolutionDir)..\external\Library\bin\$(Platform)\$(Configuration)\;$(SolutionDir)..\external\Expat\lib\$(Platform)\$(Configuration)\;$(WindowsSDK_LibraryPath);$(SolutionDir)..\external\FMOD\lib\</AdditionalLibraryDirectories>
+    </Link>
+    <PostBuildEvent>
+      <Command>IF EXIST "$(SolutionDir)..\Content" xcopy /E /Y "$(SolutionDir)..\Content" "$(OutDir)Content\"
+IF EXIST "$(SolutionDir)..\Content" xcopy /E /Y "$(SolutionDir)..\Content" "$(ProjectDir)Content\"
+IF EXIST "$(SolutionDir)..\external\FMOD\lib\fmodL.dll" xcopy /E /Y "$(SolutionDir)..\external\FMOD\lib\fmodL.dll" "$(OutDir)"
+IF EXIST "$(SolutionDir)..\external\FMOD\lib\fmodL64.dll" xcopy /E /Y "$(SolutionDir)..\external\FMOD\lib\fmodL64.dll" "$(OutDir)"</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level4</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>_DEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+      <TreatWarningAsError>false</TreatWarningAsError>
+      <DisableSpecificWarnings>4201</DisableSpecificWarnings>
+      <AdditionalIncludeDirectories>$(SolutionDir)..\source\Library.Desktop;$(SolutionDir)..\external;$(SolutionDir)..\external\Library\Library;$(SolutionDir)..\external\Expat\include;$(SolutionDir)..\external\glm;$(SolutionDir)..\source\Game.Desktop.Shared;$(SolutionDir)..\external\Box2D\include_2015;$(SolutionDir)..\external\FMOD\inc</AdditionalIncludeDirectories>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <TreatLinkerWarningAsErrors>true</TreatLinkerWarningAsErrors>
+      <AdditionalDependencies>Library.Desktop.lib;Library.lib;d3d11.lib;d3dcompiler.lib;dinput8.lib;dxguid.lib;Shlwapi.lib;Expat.lib;Game.Desktop.Shared.lib;Box2D.lib;fmodL64_vc.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(SolutionDir)..\external\Box2D\bin\$(Platform)\$(Configuration)\;$(SolutionDir)..\source\Game.Desktop.Shared\bin\$(Platform)\$(Configuration)\;$(SolutionDir)..\source\Library.Desktop\bin\$(Platform)\$(Configuration)\;$(SolutionDir)..\external\Library\bin\$(Platform)\$(Configuration)\;$(SolutionDir)..\external\Expat\lib\$(Platform)\$(Configuration)\;$(WindowsSDK_LibraryPath);$(SolutionDir)..\external\FMOD\lib\</AdditionalLibraryDirectories>
+    </Link>
+    <PostBuildEvent>
+      <Command>IF EXIST "$(SolutionDir)..\Content" xcopy /E /Y "$(SolutionDir)..\Content" "$(OutDir)Content\"
+IF EXIST "$(SolutionDir)..\Content" xcopy /E /Y "$(SolutionDir)..\Content" "$(ProjectDir)Content\"
+IF EXIST "$(SolutionDir)..\external\FMOD\lib\fmodL.dll" xcopy /E /Y "$(SolutionDir)..\external\FMOD\lib\fmodL.dll" "$(OutDir)"
+IF EXIST "$(SolutionDir)..\external\FMOD\lib\fmodL64.dll" xcopy /E /Y "$(SolutionDir)..\external\FMOD\lib\fmodL64.dll" "$(OutDir)"</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level4</WarningLevel>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+      <TreatWarningAsError>false</TreatWarningAsError>
+      <DisableSpecificWarnings>4201</DisableSpecificWarnings>
+      <AdditionalIncludeDirectories>$(SolutionDir)..\source\Library.Desktop;$(SolutionDir)..\external;$(SolutionDir)..\external\Library\Library;$(SolutionDir)..\external\Expat\include;$(SolutionDir)..\external\glm;$(SolutionDir)..\source\Game.Desktop.Shared;$(SolutionDir)..\external\Box2D\include_2015;$(SolutionDir)..\external\FMOD\inc</AdditionalIncludeDirectories>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <TreatLinkerWarningAsErrors>true</TreatLinkerWarningAsErrors>
+      <AdditionalDependencies>Library.Desktop.lib;Library.lib;d3d11.lib;d3dcompiler.lib;dinput8.lib;dxguid.lib;Shlwapi.lib;Expat.lib;Game.Desktop.Shared.lib;Box2D.lib;fmodL_vc.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(SolutionDir)..\external\Box2D\bin\$(Platform)\$(Configuration)\;$(SolutionDir)..\source\Game.Desktop.Shared\bin\$(Platform)\$(Configuration)\;$(SolutionDir)..\source\Library.Desktop\bin\$(Platform)\$(Configuration)\;$(SolutionDir)..\external\Library\bin\$(Platform)\$(Configuration)\;$(SolutionDir)..\external\Expat\lib\$(Platform)\$(Configuration)\;$(WindowsSDK_LibraryPath);$(SolutionDir)..\external\FMOD\lib\</AdditionalLibraryDirectories>
+    </Link>
+    <PostBuildEvent>
+      <Command>IF EXIST "$(SolutionDir)..\Content" xcopy /E /Y "$(SolutionDir)..\Content" "$(OutDir)Content\"
+IF EXIST "$(SolutionDir)..\Content" xcopy /E /Y "$(SolutionDir)..\Content" "$(ProjectDir)Content\"
+IF EXIST "$(SolutionDir)..\external\FMOD\lib\fmodL.dll" xcopy /E /Y "$(SolutionDir)..\external\FMOD\lib\fmodL.dll" "$(OutDir)"
+IF EXIST "$(SolutionDir)..\external\FMOD\lib\fmodL64.dll" xcopy /E /Y "$(SolutionDir)..\external\FMOD\lib\fmodL64.dll" "$(OutDir)"</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level4</WarningLevel>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>NDEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+      <TreatWarningAsError>false</TreatWarningAsError>
+      <DisableSpecificWarnings>4201</DisableSpecificWarnings>
+      <AdditionalIncludeDirectories>$(SolutionDir)..\source\Library.Desktop;$(SolutionDir)..\external;$(SolutionDir)..\external\Library\Library;$(SolutionDir)..\external\Expat\include;$(SolutionDir)..\external\glm;$(SolutionDir)..\source\Game.Desktop.Shared;$(SolutionDir)..\external\Box2D\include_2015;$(SolutionDir)..\external\FMOD\inc</AdditionalIncludeDirectories>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <TreatLinkerWarningAsErrors>true</TreatLinkerWarningAsErrors>
+      <AdditionalDependencies>Library.Desktop.lib;Library.lib;d3d11.lib;d3dcompiler.lib;dinput8.lib;dxguid.lib;Shlwapi.lib;Expat.lib;Game.Desktop.Shared.lib;Box2D.lib;fmodL64_vc.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(SolutionDir)..\external\Box2D\bin\$(Platform)\$(Configuration)\;$(SolutionDir)..\source\Game.Desktop.Shared\bin\$(Platform)\$(Configuration)\;$(SolutionDir)..\source\Library.Desktop\bin\$(Platform)\$(Configuration)\;$(SolutionDir)..\external\Library\bin\$(Platform)\$(Configuration)\;$(SolutionDir)..\external\Expat\lib\$(Platform)\$(Configuration)\;$(WindowsSDK_LibraryPath);$(SolutionDir)..\external\FMOD\lib\</AdditionalLibraryDirectories>
+    </Link>
+    <PostBuildEvent>
+      <Command>IF EXIST "$(SolutionDir)..\Content" xcopy /E /Y "$(SolutionDir)..\Content" "$(OutDir)Content\"
+IF EXIST "$(SolutionDir)..\Content" xcopy /E /Y "$(SolutionDir)..\Content" "$(ProjectDir)Content\"
+IF EXIST "$(SolutionDir)..\external\FMOD\lib\fmodL.dll" xcopy /E /Y "$(SolutionDir)..\external\FMOD\lib\fmodL.dll" "$(OutDir)"
+IF EXIST "$(SolutionDir)..\external\FMOD\lib\fmodL64.dll" xcopy /E /Y "$(SolutionDir)..\external\FMOD\lib\fmodL64.dll" "$(OutDir)"</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="ActionFlipPlayer.cpp" />
+    <ClCompile Include="ActionMovePlayer.cpp" />
+    <ClCompile Include="ActionSpriteDraw.cpp" />
+    <ClCompile Include="ActionSpriteUpdate.cpp" />
+    <ClCompile Include="Camera.cpp" />
+    <ClCompile Include="ColorHelper.cpp" />
+    <ClCompile Include="DrawableGameComponent.cpp" />
+    <ClCompile Include="EntityBackground.cpp" />
+    <ClCompile Include="EntityInputHandler.cpp" />
+    <ClCompile Include="EntityMovable.cpp" />
+    <ClCompile Include="EntityPlayer.cpp" />
+    <ClCompile Include="EntityText.cpp" />
+    <ClCompile Include="EntityTile.cpp" />
+    <ClCompile Include="Game.cpp" />
+    <ClCompile Include="GameComponent.cpp" />
+    <ClCompile Include="GameException.cpp" />
+    <ClCompile Include="Keyboard.cpp" />
+    <ClCompile Include="LevelParser.cpp" />
+    <ClCompile Include="MatrixHelper.cpp" />
+    <ClCompile Include="pch.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="Program.cpp" />
+    <ClCompile Include="RenderingGame.cpp" />
+    <ClCompile Include="RenderTarget.cpp" />
+    <ClCompile Include="ServiceContainer.cpp" />
+    <ClCompile Include="Sprite.cpp" />
+    <ClCompile Include="Utility.cpp" />
+    <ClCompile Include="VectorHelper.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="ActionFlipPlayer.h" />
+    <ClInclude Include="ActionMovePlayer.h" />
+    <ClInclude Include="ActionSpriteDraw.h" />
+    <ClInclude Include="ActionSpriteUpdate.h" />
+    <ClInclude Include="Camera.h" />
+    <ClInclude Include="ColorHelper.h" />
+    <ClInclude Include="Common.h" />
+    <ClInclude Include="DrawableGameComponent.h" />
+    <ClInclude Include="EntityBackground.h" />
+    <ClInclude Include="EntityInputHandler.h" />
+    <ClInclude Include="EntityMovable.h" />
+    <ClInclude Include="EntityPlayer.h" />
+    <ClInclude Include="EntityText.h" />
+    <ClInclude Include="EntityTile.h" />
+    <ClInclude Include="Game.h" />
+    <ClInclude Include="GameComponent.h" />
+    <ClInclude Include="GameException.h" />
+    <ClInclude Include="Keyboard.h" />
+    <ClInclude Include="LevelParser.h" />
+    <ClInclude Include="MatrixHelper.h" />
+    <ClInclude Include="pch.h" />
+    <ClInclude Include="RenderingGame.h" />
+    <ClInclude Include="RenderTarget.h" />
+    <ClInclude Include="ServiceContainer.h" />
+    <ClInclude Include="Sprite.h" />
+    <ClInclude Include="Utility.h" />
+    <ClInclude Include="VectorHelper.h" />
+    <ClInclude Include="VertexDeclarations.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <FxCompile Include="PixelShader.hlsl">
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Pixel</ShaderType>
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Pixel</ShaderType>
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Pixel</ShaderType>
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Pixel</ShaderType>
+      <ObjectFileOutput Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(OutDir)Content\Effects\%(Filename).cso</ObjectFileOutput>
+      <ObjectFileOutput Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(OutDir)Content\Effects\%(Filename).cso</ObjectFileOutput>
+      <ObjectFileOutput Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(OutDir)Content\Effects\%(Filename).cso</ObjectFileOutput>
+      <ObjectFileOutput Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(OutDir)Content\Effects\%(Filename).cso</ObjectFileOutput>
+    </FxCompile>
+    <FxCompile Include="VertexShader.hlsl">
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Vertex</ShaderType>
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Vertex</ShaderType>
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Vertex</ShaderType>
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Vertex</ShaderType>
+      <ObjectFileOutput Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(OutDir)Content\Effects\%(Filename).cso</ObjectFileOutput>
+      <ObjectFileOutput Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(OutDir)Content\Effects\%(Filename).cso</ObjectFileOutput>
+      <ObjectFileOutput Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(OutDir)Content\Effects\%(Filename).cso</ObjectFileOutput>
+      <ObjectFileOutput Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(OutDir)Content\Effects\%(Filename).cso</ObjectFileOutput>
+    </FxCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Game.Desktop.Shared\Game.Desktop.Shared.vcxproj">
+      <Project>{d7ed3c7d-a574-40c1-8a33-fab6cd8749d4}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\Library.Desktop\Library.Desktop.vcxproj">
+      <Project>{da4846f7-58ae-4265-8856-2bd0b51b13c3}</Project>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+    <Import Project="..\packages\directxtk_desktop_2015.2016.4.26.1\build\native\directxtk_desktop_2015.targets" Condition="Exists('..\packages\directxtk_desktop_2015.2016.4.26.1\build\native\directxtk_desktop_2015.targets')" />
+    <Import Project="..\..\build\packages\directxtk_desktop_2015.2016.4.26.1\build\native\directxtk_desktop_2015.targets" Condition="Exists('..\..\build\packages\directxtk_desktop_2015.2016.4.26.1\build\native\directxtk_desktop_2015.targets')" />
+  </ImportGroup>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+  </Target>
+</Project>

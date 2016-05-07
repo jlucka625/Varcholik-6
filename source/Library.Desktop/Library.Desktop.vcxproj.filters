@@ -1,0 +1,224 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="Attributed.cpp" />
+    <ClCompile Include="Datum.cpp" />
+    <ClCompile Include="DefaultIncrementFunctor.cpp" />
+    <ClCompile Include="DoubleSizeIncrementFunctor.cpp" />
+    <ClCompile Include="IXmlParseHelper.cpp" />
+    <ClCompile Include="pch.cpp" />
+    <ClCompile Include="Scope.cpp" />
+    <ClCompile Include="XmlParseMaster.cpp" />
+    <ClCompile Include="ZeroIncrementFunctor.cpp" />
+    <ClCompile Include="FooSharedData.cpp">
+      <Filter>SharedDatas</Filter>
+    </ClCompile>
+    <ClCompile Include="TableSharedData.cpp">
+      <Filter>SharedDatas</Filter>
+    </ClCompile>
+    <ClCompile Include="FloatXmlParseHelper.cpp">
+      <Filter>XmlParseHelpers</Filter>
+    </ClCompile>
+    <ClCompile Include="IntegerXmlParseHelper.cpp">
+      <Filter>XmlParseHelpers</Filter>
+    </ClCompile>
+    <ClCompile Include="MatrixXmlParseHelper.cpp">
+      <Filter>XmlParseHelpers</Filter>
+    </ClCompile>
+    <ClCompile Include="StringXmlParseHelper.cpp">
+      <Filter>XmlParseHelpers</Filter>
+    </ClCompile>
+    <ClCompile Include="TableXmlParseHelper.cpp">
+      <Filter>XmlParseHelpers</Filter>
+    </ClCompile>
+    <ClCompile Include="VectorXmlParseHelper.cpp">
+      <Filter>XmlParseHelpers</Filter>
+    </ClCompile>
+    <ClCompile Include="Entity.cpp" />
+    <ClCompile Include="World.cpp" />
+    <ClCompile Include="Sector.cpp" />
+    <ClCompile Include="WorldState.cpp" />
+    <ClCompile Include="EntityXmlParseHelper.cpp">
+      <Filter>XmlParseHelpers</Filter>
+    </ClCompile>
+    <ClCompile Include="WorldXmlParseHelper.cpp">
+      <Filter>XmlParseHelpers</Filter>
+    </ClCompile>
+    <ClCompile Include="SectorXmlParseHelper.cpp">
+      <Filter>XmlParseHelpers</Filter>
+    </ClCompile>
+    <ClCompile Include="GameClock.cpp" />
+    <ClCompile Include="GameTime.cpp" />
+    <ClCompile Include="Action.cpp" />
+    <ClCompile Include="ActionXmlParseHelper.cpp">
+      <Filter>XmlParseHelpers</Filter>
+    </ClCompile>
+    <ClCompile Include="ActionList.cpp" />
+    <ClCompile Include="ActionListWhile.cpp">
+      <Filter>Actions</Filter>
+    </ClCompile>
+    <ClCompile Include="ActionIncrement.cpp">
+      <Filter>Actions</Filter>
+    </ClCompile>
+    <ClCompile Include="ActionDecrement.cpp">
+      <Filter>Actions</Filter>
+    </ClCompile>
+    <ClCompile Include="ActionIf.cpp">
+      <Filter>Actions</Filter>
+    </ClCompile>
+    <ClCompile Include="EventPublisher.cpp" />
+    <ClCompile Include="EventQueue.cpp" />
+    <ClCompile Include="Reaction.cpp" />
+    <ClCompile Include="ActionContainer.cpp" />
+    <ClCompile Include="ReactionXmlParseHelper.cpp">
+      <Filter>XmlParseHelpers</Filter>
+    </ClCompile>
+    <ClCompile Include="ActionLoadSector.cpp">
+      <Filter>Actions</Filter>
+    </ClCompile>
+    <ClCompile Include="ActionUnloadSector.cpp">
+      <Filter>Actions</Filter>
+    </ClCompile>
+    <ClCompile Include="SymbolSharedData.cpp">
+      <Filter>SharedDatas</Filter>
+    </ClCompile>
+    <ClCompile Include="TileXmlParseHelper.cpp">
+      <Filter>XmlParseHelpers</Filter>
+    </ClCompile>
+    <ClCompile Include="SoundXmlParseHelper.cpp">
+      <Filter>XmlParseHelpers</Filter>
+    </ClCompile>
+    <ClCompile Include="SoundSharedData.cpp">
+      <Filter>SharedDatas</Filter>
+    </ClCompile>
+    <ClCompile Include="SoundParser.cpp" />
+    <ClCompile Include="LevelConfigXmlParseHelper.cpp">
+      <Filter>XmlParseHelpers</Filter>
+    </ClCompile>
+    <ClCompile Include="LevelSharedData.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Attributed.h" />
+    <ClInclude Include="Datum.h" />
+    <ClInclude Include="DefaultIncrementFunctor.h" />
+    <ClInclude Include="DoubleSizeIncrementFunctor.h" />
+    <ClInclude Include="DefaultHashFunctor.h" />
+    <ClInclude Include="Factory.h" />
+    <ClInclude Include="HashMap.h" />
+    <ClInclude Include="IXmlParseHelper.h" />
+    <ClInclude Include="pch.h" />
+    <ClInclude Include="RTTI.h" />
+    <ClInclude Include="Scope.h" />
+    <ClInclude Include="SList.h" />
+    <ClInclude Include="Stack.h" />
+    <ClInclude Include="Vector.h" />
+    <ClInclude Include="XmlParseMaster.h" />
+    <ClInclude Include="ZeroIncrementFunctor.h" />
+    <ClInclude Include="FooSharedData.h">
+      <Filter>SharedDatas</Filter>
+    </ClInclude>
+    <ClInclude Include="TableSharedData.h">
+      <Filter>SharedDatas</Filter>
+    </ClInclude>
+    <ClInclude Include="FloatXmlParseHelper.h">
+      <Filter>XmlParseHelpers</Filter>
+    </ClInclude>
+    <ClInclude Include="IntegerXmlParseHelper.h">
+      <Filter>XmlParseHelpers</Filter>
+    </ClInclude>
+    <ClInclude Include="MatrixXmlParseHelper.h">
+      <Filter>XmlParseHelpers</Filter>
+    </ClInclude>
+    <ClInclude Include="StringXmlParseHelper.h">
+      <Filter>XmlParseHelpers</Filter>
+    </ClInclude>
+    <ClInclude Include="TableXmlParseHelper.h">
+      <Filter>XmlParseHelpers</Filter>
+    </ClInclude>
+    <ClInclude Include="VectorXmlParseHelper.h">
+      <Filter>XmlParseHelpers</Filter>
+    </ClInclude>
+    <ClInclude Include="Entity.h" />
+    <ClInclude Include="World.h" />
+    <ClInclude Include="Sector.h" />
+    <ClInclude Include="WorldState.h" />
+    <ClInclude Include="EntityXmlParseHelper.h">
+      <Filter>XmlParseHelpers</Filter>
+    </ClInclude>
+    <ClInclude Include="WorldXmlParseHelper.h">
+      <Filter>XmlParseHelpers</Filter>
+    </ClInclude>
+    <ClInclude Include="SectorXmlParseHelper.h">
+      <Filter>XmlParseHelpers</Filter>
+    </ClInclude>
+    <ClInclude Include="GameClock.h" />
+    <ClInclude Include="GameTime.h" />
+    <ClInclude Include="Action.h" />
+    <ClInclude Include="ActionXmlParseHelper.h">
+      <Filter>XmlParseHelpers</Filter>
+    </ClInclude>
+    <ClInclude Include="ActionList.h" />
+    <ClInclude Include="ActionListWhile.h">
+      <Filter>Actions</Filter>
+    </ClInclude>
+    <ClInclude Include="ActionIncrement.h">
+      <Filter>Actions</Filter>
+    </ClInclude>
+    <ClInclude Include="ActionDecrement.h">
+      <Filter>Actions</Filter>
+    </ClInclude>
+    <ClInclude Include="ActionIf.h">
+      <Filter>Actions</Filter>
+    </ClInclude>
+    <ClInclude Include="EventSubscriber.h" />
+    <ClInclude Include="Event.h" />
+    <ClInclude Include="EventPublisher.h" />
+    <ClInclude Include="EventQueue.h" />
+    <ClInclude Include="Reaction.h" />
+    <ClInclude Include="ActionContainer.h" />
+    <ClInclude Include="ReactionXmlParseHelper.h">
+      <Filter>XmlParseHelpers</Filter>
+    </ClInclude>
+    <ClInclude Include="ActionLoadSector.h">
+      <Filter>Actions</Filter>
+    </ClInclude>
+    <ClInclude Include="ActionUnloadSector.h">
+      <Filter>Actions</Filter>
+    </ClInclude>
+    <ClInclude Include="SymbolSharedData.h">
+      <Filter>SharedDatas</Filter>
+    </ClInclude>
+    <ClInclude Include="TileXmlParseHelper.h">
+      <Filter>XmlParseHelpers</Filter>
+    </ClInclude>
+    <ClInclude Include="SoundXmlParseHelper.h">
+      <Filter>XmlParseHelpers</Filter>
+    </ClInclude>
+    <ClInclude Include="SoundSharedData.h">
+      <Filter>SharedDatas</Filter>
+    </ClInclude>
+    <ClInclude Include="SoundParser.h" />
+    <ClInclude Include="LevelConfigXmlParseHelper.h">
+      <Filter>XmlParseHelpers</Filter>
+    </ClInclude>
+    <ClInclude Include="LevelSharedData.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="HashMap.inl" />
+    <None Include="SList.inl" />
+    <None Include="Stack.inl" />
+    <None Include="Vector.inl" />
+    <None Include="Event.inl" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="XmlParseHelpers">
+      <UniqueIdentifier>{b9bc1400-5f88-4230-a09a-6b2b4fcc2380}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SharedDatas">
+      <UniqueIdentifier>{45739db7-df21-443a-9c90-c45998ce9eba}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Actions">
+      <UniqueIdentifier>{847630f0-0197-4039-bc98-f014af70f13d}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

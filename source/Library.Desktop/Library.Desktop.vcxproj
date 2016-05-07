@@ -1,0 +1,291 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{DA4846F7-58AE-4265-8856-2BD0B51B13C3}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>LibraryDesktop</RootNamespace>
+    <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>$(ProjectDir)bin\$(Platform)\$(Configuration)\</OutDir>
+    <IntDir>$(ProjectDir)obj\$(Platform)\$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>$(ProjectDir)bin\$(Platform)\$(Configuration)\</OutDir>
+    <IntDir>$(ProjectDir)obj\$(Platform)\$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <OutDir>$(ProjectDir)bin\$(Platform)\$(Configuration)\</OutDir>
+    <IntDir>$(ProjectDir)obj\$(Platform)\$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <OutDir>$(ProjectDir)bin\$(Platform)\$(Configuration)\</OutDir>
+    <IntDir>$(ProjectDir)obj\$(Platform)\$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level4</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+      <TreatWarningAsError>true</TreatWarningAsError>
+      <DisableSpecificWarnings>4201</DisableSpecificWarnings>
+      <AdditionalIncludeDirectories>$(SolutionDir)..\external;$(SolutionDir)..\external\glm;$(SolutionDir)..\external\Expat\include;$(SolutionDir)..\external\Box2D\include_2015;$(SolutionDir)..\source\Game.Desktop.Shared;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level4</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>_DEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+      <TreatWarningAsError>true</TreatWarningAsError>
+      <DisableSpecificWarnings>4201</DisableSpecificWarnings>
+      <AdditionalIncludeDirectories>$(SolutionDir)..\external;$(SolutionDir)..\external\glm;$(SolutionDir)..\external\Expat\include;$(SolutionDir)..\external\Box2D\include_2015;$(SolutionDir)..\source\Game.Desktop.Shared;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level4</WarningLevel>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+      <TreatWarningAsError>true</TreatWarningAsError>
+      <DisableSpecificWarnings>4201</DisableSpecificWarnings>
+      <AdditionalIncludeDirectories>$(SolutionDir)..\external;$(SolutionDir)..\external\glm;$(SolutionDir)..\external\Expat\include;$(SolutionDir)..\external\Box2D\include_2015;$(SolutionDir)..\source\Game.Desktop.Shared;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level4</WarningLevel>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>NDEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+      <TreatWarningAsError>true</TreatWarningAsError>
+      <DisableSpecificWarnings>4201</DisableSpecificWarnings>
+      <AdditionalIncludeDirectories>$(SolutionDir)..\external;$(SolutionDir)..\external\glm;$(SolutionDir)..\external\Expat\include;$(SolutionDir)..\external\Box2D\include_2015;$(SolutionDir)..\source\Game.Desktop.Shared;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="Action.h" />
+    <ClInclude Include="ActionContainer.h" />
+    <ClInclude Include="ActionDecrement.h" />
+    <ClInclude Include="ActionIf.h" />
+    <ClInclude Include="ActionIncrement.h" />
+    <ClInclude Include="ActionList.h" />
+    <ClInclude Include="ActionListWhile.h" />
+    <ClInclude Include="ActionLoadSector.h" />
+    <ClInclude Include="ActionUnloadSector.h" />
+    <ClInclude Include="ActionXmlParseHelper.h" />
+    <ClInclude Include="Attributed.h" />
+    <ClInclude Include="Datum.h" />
+    <ClInclude Include="DefaultIncrementFunctor.h" />
+    <ClInclude Include="DoubleSizeIncrementFunctor.h" />
+    <ClInclude Include="DefaultHashFunctor.h" />
+    <ClInclude Include="Entity.h" />
+    <ClInclude Include="EntityXmlParseHelper.h" />
+    <ClInclude Include="Event.h" />
+    <ClInclude Include="EventPublisher.h" />
+    <ClInclude Include="EventQueue.h" />
+    <ClInclude Include="EventSubscriber.h" />
+    <ClInclude Include="Factory.h" />
+    <ClInclude Include="FloatXmlParseHelper.h" />
+    <ClInclude Include="FooSharedData.h" />
+    <ClInclude Include="GameClock.h" />
+    <ClInclude Include="GameTime.h" />
+    <ClInclude Include="HashMap.h" />
+    <ClInclude Include="IntegerXmlParseHelper.h" />
+    <ClInclude Include="IXmlParseHelper.h" />
+    <ClInclude Include="LevelConfigXmlParseHelper.h" />
+    <ClInclude Include="LevelSharedData.h" />
+    <ClInclude Include="MatrixXmlParseHelper.h" />
+    <ClInclude Include="pch.h" />
+    <ClInclude Include="Reaction.h" />
+    <ClInclude Include="ReactionXmlParseHelper.h" />
+    <ClInclude Include="RTTI.h" />
+    <ClInclude Include="Scope.h" />
+    <ClInclude Include="Sector.h" />
+    <ClInclude Include="SectorXmlParseHelper.h" />
+    <ClInclude Include="SList.h" />
+    <ClInclude Include="SoundParser.h" />
+    <ClInclude Include="SoundSharedData.h" />
+    <ClInclude Include="SoundXmlParseHelper.h" />
+    <ClInclude Include="Stack.h" />
+    <ClInclude Include="StringXmlParseHelper.h" />
+    <ClInclude Include="SymbolSharedData.h" />
+    <ClInclude Include="TableSharedData.h" />
+    <ClInclude Include="TableXmlParseHelper.h" />
+    <ClInclude Include="TileXmlParseHelper.h" />
+    <ClInclude Include="Vector.h" />
+    <ClInclude Include="VectorXmlParseHelper.h" />
+    <ClInclude Include="World.h" />
+    <ClInclude Include="WorldState.h" />
+    <ClInclude Include="WorldXmlParseHelper.h" />
+    <ClInclude Include="XmlParseMaster.h" />
+    <ClInclude Include="ZeroIncrementFunctor.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Action.cpp" />
+    <ClCompile Include="ActionContainer.cpp" />
+    <ClCompile Include="ActionDecrement.cpp" />
+    <ClCompile Include="ActionIf.cpp" />
+    <ClCompile Include="ActionIncrement.cpp" />
+    <ClCompile Include="ActionList.cpp" />
+    <ClCompile Include="ActionListWhile.cpp" />
+    <ClCompile Include="ActionLoadSector.cpp" />
+    <ClCompile Include="ActionUnloadSector.cpp" />
+    <ClCompile Include="ActionXmlParseHelper.cpp" />
+    <ClCompile Include="Attributed.cpp" />
+    <ClCompile Include="Datum.cpp" />
+    <ClCompile Include="DefaultIncrementFunctor.cpp" />
+    <ClCompile Include="DoubleSizeIncrementFunctor.cpp" />
+    <ClCompile Include="Entity.cpp" />
+    <ClCompile Include="EntityXmlParseHelper.cpp" />
+    <ClCompile Include="EventPublisher.cpp" />
+    <ClCompile Include="EventQueue.cpp" />
+    <ClCompile Include="FloatXmlParseHelper.cpp" />
+    <ClCompile Include="FooSharedData.cpp" />
+    <ClCompile Include="GameClock.cpp" />
+    <ClCompile Include="GameTime.cpp" />
+    <ClCompile Include="IntegerXmlParseHelper.cpp" />
+    <ClCompile Include="IXmlParseHelper.cpp" />
+    <ClCompile Include="LevelConfigXmlParseHelper.cpp" />
+    <ClCompile Include="LevelSharedData.cpp" />
+    <ClCompile Include="MatrixXmlParseHelper.cpp" />
+    <ClCompile Include="pch.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="Reaction.cpp" />
+    <ClCompile Include="ReactionXmlParseHelper.cpp" />
+    <ClCompile Include="Scope.cpp" />
+    <ClCompile Include="Sector.cpp" />
+    <ClCompile Include="SectorXmlParseHelper.cpp" />
+    <ClCompile Include="SoundParser.cpp" />
+    <ClCompile Include="SoundSharedData.cpp" />
+    <ClCompile Include="SoundXmlParseHelper.cpp" />
+    <ClCompile Include="StringXmlParseHelper.cpp" />
+    <ClCompile Include="SymbolSharedData.cpp" />
+    <ClCompile Include="TableSharedData.cpp" />
+    <ClCompile Include="TableXmlParseHelper.cpp" />
+    <ClCompile Include="TileXmlParseHelper.cpp" />
+    <ClCompile Include="VectorXmlParseHelper.cpp" />
+    <ClCompile Include="World.cpp" />
+    <ClCompile Include="WorldState.cpp" />
+    <ClCompile Include="WorldXmlParseHelper.cpp" />
+    <ClCompile Include="XmlParseMaster.cpp" />
+    <ClCompile Include="ZeroIncrementFunctor.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Event.inl" />
+    <None Include="HashMap.inl" />
+    <None Include="SList.inl" />
+    <None Include="Stack.inl" />
+    <None Include="Vector.inl" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Game.Desktop.Shared\Game.Desktop.Shared.vcxproj">
+      <Project>{d7ed3c7d-a574-40c1-8a33-fab6cd8749d4}</Project>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

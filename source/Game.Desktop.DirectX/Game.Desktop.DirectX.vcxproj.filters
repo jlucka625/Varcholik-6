@@ -1,0 +1,81 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="ActionFlipPlayer.cpp" />
+    <ClCompile Include="ActionMovePlayer.cpp" />
+    <ClCompile Include="ActionSpriteDraw.cpp" />
+    <ClCompile Include="ActionSpriteUpdate.cpp" />
+    <ClCompile Include="Camera.cpp" />
+    <ClCompile Include="ColorHelper.cpp" />
+    <ClCompile Include="DrawableGameComponent.cpp" />
+    <ClCompile Include="EntityBackground.cpp" />
+    <ClCompile Include="EntityInputHandler.cpp" />
+    <ClCompile Include="EntityMovable.cpp" />
+    <ClCompile Include="EntityPlayer.cpp" />
+    <ClCompile Include="EntityText.cpp" />
+    <ClCompile Include="EntityTile.cpp" />
+    <ClCompile Include="Game.cpp" />
+    <ClCompile Include="GameComponent.cpp" />
+    <ClCompile Include="GameException.cpp" />
+    <ClCompile Include="Keyboard.cpp" />
+    <ClCompile Include="LevelParser.cpp" />
+    <ClCompile Include="MatrixHelper.cpp" />
+    <ClCompile Include="pch.cpp" />
+    <ClCompile Include="Program.cpp" />
+    <ClCompile Include="RenderingGame.cpp" />
+    <ClCompile Include="RenderTarget.cpp" />
+    <ClCompile Include="ServiceContainer.cpp" />
+    <ClCompile Include="Sprite.cpp" />
+    <ClCompile Include="Utility.cpp" />
+    <ClCompile Include="VectorHelper.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="ActionFlipPlayer.h" />
+    <ClInclude Include="ActionMovePlayer.h" />
+    <ClInclude Include="ActionSpriteDraw.h" />
+    <ClInclude Include="ActionSpriteUpdate.h" />
+    <ClInclude Include="Camera.h" />
+    <ClInclude Include="ColorHelper.h" />
+    <ClInclude Include="Common.h" />
+    <ClInclude Include="DrawableGameComponent.h" />
+    <ClInclude Include="EntityBackground.h" />
+    <ClInclude Include="EntityInputHandler.h" />
+    <ClInclude Include="EntityMovable.h" />
+    <ClInclude Include="EntityPlayer.h" />
+    <ClInclude Include="EntityText.h" />
+    <ClInclude Include="EntityTile.h" />
+    <ClInclude Include="Game.h" />
+    <ClInclude Include="GameComponent.h" />
+    <ClInclude Include="GameException.h" />
+    <ClInclude Include="Keyboard.h" />
+    <ClInclude Include="LevelParser.h" />
+    <ClInclude Include="MatrixHelper.h" />
+    <ClInclude Include="pch.h" />
+    <ClInclude Include="RenderingGame.h" />
+    <ClInclude Include="RenderTarget.h" />
+    <ClInclude Include="ServiceContainer.h" />
+    <ClInclude Include="Sprite.h" />
+    <ClInclude Include="Utility.h" />
+    <ClInclude Include="VectorHelper.h" />
+    <ClInclude Include="VertexDeclarations.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Content">
+      <UniqueIdentifier>{bf8b6b73-870c-4229-82cd-13dd58ab9e15}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Content\Effects">
+      <UniqueIdentifier>{ee2ce421-44f5-43aa-a7af-ee583297850b}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <FxCompile Include="VertexShader.hlsl">
+      <Filter>Content\Effects</Filter>
+    </FxCompile>
+    <FxCompile Include="PixelShader.hlsl">
+      <Filter>Content\Effects</Filter>
+    </FxCompile>
+  </ItemGroup>
+</Project>

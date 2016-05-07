@@ -1,0 +1,124 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="AttributedTest.cpp" />
+    <ClCompile Include="DatumTest.cpp" />
+    <ClCompile Include="FactoryTest.cpp" />
+    <ClCompile Include="FooTest.cpp" />
+    <ClCompile Include="HashMapIteratorTest.cpp" />
+    <ClCompile Include="HashMapTest.cpp" />
+    <ClCompile Include="pch.cpp" />
+    <ClCompile Include="ScopeTest.cpp" />
+    <ClCompile Include="SListIteratorTest.cpp" />
+    <ClCompile Include="SListTest.cpp" />
+    <ClCompile Include="StackTest.cpp" />
+    <ClCompile Include="VectorIteratorTest.cpp" />
+    <ClCompile Include="VectorTest.cpp" />
+    <ClCompile Include="WorldTest.cpp" />
+    <ClCompile Include="XmlParseMasterTest.cpp" />
+    <ClCompile Include="AttributedBar.cpp">
+      <Filter>Sample Classes</Filter>
+    </ClCompile>
+    <ClCompile Include="AttributedFoo.cpp">
+      <Filter>Sample Classes</Filter>
+    </ClCompile>
+    <ClCompile Include="Foo.cpp">
+      <Filter>Sample Classes</Filter>
+    </ClCompile>
+    <ClCompile Include="Enemy.cpp">
+      <Filter>Game Classes</Filter>
+    </ClCompile>
+    <ClCompile Include="ActionTest.cpp">
+      <Filter>Action Test Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ActionListWhileTest.cpp">
+      <Filter>Action Test Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ActionIfTest.cpp">
+      <Filter>Action Test Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ActionIncrementTest.cpp">
+      <Filter>Action Test Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ActionDecrementTest.cpp">
+      <Filter>Action Test Files</Filter>
+    </ClCompile>
+    <ClCompile Include="EventTest.cpp">
+      <Filter>Event Test Files</Filter>
+    </ClCompile>
+    <ClCompile Include="EventQueueTest.cpp">
+      <Filter>Event Test Files</Filter>
+    </ClCompile>
+    <ClCompile Include="AttributedFooEventSubscriber.cpp">
+      <Filter>Event Test Files</Filter>
+    </ClCompile>
+    <ClCompile Include="FooEventSubscriber.cpp">
+      <Filter>Event Test Files</Filter>
+    </ClCompile>
+    <ClCompile Include="IntEventSubscriber.cpp">
+      <Filter>Event Test Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ReactionTest.cpp" />
+    <ClCompile Include="ActionLoadSectorTest.cpp">
+      <Filter>Action Test Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="pch.h" />
+    <ClInclude Include="AttributedBar.h">
+      <Filter>Sample Classes</Filter>
+    </ClInclude>
+    <ClInclude Include="AttributedFoo.h">
+      <Filter>Sample Classes</Filter>
+    </ClInclude>
+    <ClInclude Include="Foo.h">
+      <Filter>Sample Classes</Filter>
+    </ClInclude>
+    <ClInclude Include="CustomHashFunctor.h">
+      <Filter>Sample Classes</Filter>
+    </ClInclude>
+    <ClInclude Include="Enemy.h">
+      <Filter>Game Classes</Filter>
+    </ClInclude>
+    <ClInclude Include="AttributedFooEventSubscriber.h">
+      <Filter>Event Test Files</Filter>
+    </ClInclude>
+    <ClInclude Include="FooEventSubscriber.h">
+      <Filter>Event Test Files</Filter>
+    </ClInclude>
+    <ClInclude Include="IntEventSubscriber.h">
+      <Filter>Event Test Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Xml Include="Content\testfile.xml">
+      <Filter>Content</Filter>
+    </Xml>
+    <Xml Include="Content\gamefile.xml">
+      <Filter>Content</Filter>
+    </Xml>
+    <Xml Include="Content\gamefile_action.xml">
+      <Filter>Content</Filter>
+    </Xml>
+    <Xml Include="Content\gamefile_reaction.xml">
+      <Filter>Content</Filter>
+    </Xml>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Game Classes">
+      <UniqueIdentifier>{94ed3693-bd3b-48db-a556-8d872846309d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Sample Classes">
+      <UniqueIdentifier>{aa85e336-4ecf-4bf2-9a70-8efa645cc769}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Action Test Files">
+      <UniqueIdentifier>{02611b09-440d-4660-87b6-e71ba96ac596}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Content">
+      <UniqueIdentifier>{11635f6c-48e4-4d6c-a74c-fe4cdc14d927}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Event Test Files">
+      <UniqueIdentifier>{8a2578c9-d1ad-4fab-956e-ea8d9b5e698c}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

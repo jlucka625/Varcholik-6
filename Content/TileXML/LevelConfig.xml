@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Root>
+  <Level path="Content\\titleScreen.txt"/>
+  <Level path="Content\\level1.txt"/>
+  <Level path="Content\\level2.txt"/>
+  <Level path="Content\\level3.txt"/>
+  <Level path="Content\\level4.txt"/>
+  <Level path="Content\\level5.txt"/>
+  <Level path="Content\\level6.txt"/>
+</Root>

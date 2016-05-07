@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<World>
+  <Sector>
+    <Entity name="Enemy" class="EntityMovable">
+	    <String name="texName" value="characters"/>
+	    <Float name="u" value="3.0"/>
+	    <Float name="v" value="1.0"/>
+	    <Float name="width" value="32.0"/>
+	    <Float name="height" value="64.0"/>
+      <Float name="VelocityX" value="100.0"/>
+      <Float name="VelocityY" value="0.0"/>
+      <Integer name="Positive" value="0"/>
+      <Integer name="Harmful" value="1"/>
+      <Action name="Update" class="ActionSpriteUpdate"/>
+      <Action name="Draw" class="ActionSpriteDraw"/>
+      <Action name="Animation" class="ActionList">
+        <String name="AnimationName" value="Walk"/>
+        <Vector name="Frame" value="3.0 1.0 0.0 0.0"/>
+        <Vector name="Frame" value="4.0 1.0 0.0 0.0"/>
+      </Action>
+    </Entity>
+  </Sector>
+</World>

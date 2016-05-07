@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Root>
+	<BGMTracks value="20"/>
+	<SFXTracks value="100"/>
+	<BGM name="PartyEveryNight" track="0" path="./Content/Sounds/BGM/PartyEveryNight.mp3"/>
+	<BGM name="PushingOnwards" track="1" path="./Content/Sounds/BGM/PushingOnwards.mp3"/>
+	<SFX name="Flip" track="2" path="./Content/Sounds/SFX/Flip.mp3"/>
+	<SFX name="Death" track="3" path="./Content/Sounds/SFX/Death.mp3"/>
+</Root>

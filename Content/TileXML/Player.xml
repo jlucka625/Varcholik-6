@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<World>
+  <Sector>
+    <Entity name="Player" class="EntityPlayer">
+	    <String name="texName" value="characters"/>
+	    <Float name="u" value="0.0"/>
+	    <Float name="v" value="0.0"/>
+	    <Float name="width" value="32.0"/>
+	    <Float name="height" value="64.0"/>
+	    <Float name="Speed" value="200.0"/>
+	    <Float name="FallSpeed" value="400.0"/>
+      <Action name="Update" class="ActionSpriteUpdate"/>
+      <Action name="Draw" class="ActionSpriteDraw"/>
+      <Action name="Animation" class="ActionList">
+        <String name="AnimationName" value="Idle"/>
+        <Vector name="Frame" value="0.0 0.0 0.0 0.0"/>
+      </Action>
+      <Action name="Animation" class="ActionList">
+        <String name="AnimationName" value="Walk"/>
+        <Vector name="Frame" value="0.0 0.0 0.0 0.0"/>
+        <Vector name="Frame" value="1.0 0.0 0.0 0.0"/>
+      </Action>
+      <Action name="Animation" class="ActionList">
+        <String name="AnimationName" value="Death"/>
+        <Vector name="Frame" value="3.0 0.0 0.0 0.0"/>
+      </Action>
+      <Reaction class="ReactionAttributed">
+		<String name="Subtype" value="Left"/>
+		<Action name="moveLeft" class="ActionMovePlayer">
+			<String name="Direction" value="Left"/>
+			<String name="Target" value="Player"/>
+		</Action>
+     </Reaction>
+      <Reaction class="ReactionAttributed">
+		<String name="Subtype" value="LeftStop"/>
+		<Action name="moveLeft" class="ActionMovePlayer">
+			<String name="Direction" value="LeftStop"/>
+			<String name="Target" value="Player"/>
+		</Action>
+     </Reaction>
+     <Reaction class="ReactionAttributed">
+		<String name="Subtype" value="Right"/>
+		<Action name="moveLeft" class="ActionMovePlayer">
+			<String name="Direction" value="Right"/>
+			<String name="Target" value="Player"/>
+		</Action>
+     </Reaction>
+     <Reaction class="ReactionAttributed">
+		<String name="Subtype" value="RightStop"/>
+		<Action name="moveLeft" class="ActionMovePlayer">
+			<String name="Direction" value="RightStop"/>
+			<String name="Target" value="Player"/>
+		</Action>
+     </Reaction>
+     <Reaction class="ReactionAttributed">
+		<String name="Subtype" value="Flip"/>
+		<Action name="flipAction" class="ActionFlipPlayer">
+			<String name="Target" value="Player"/>
+		</Action>
+     </Reaction>		
+
+    </Entity>
+  </Sector>
+</World>

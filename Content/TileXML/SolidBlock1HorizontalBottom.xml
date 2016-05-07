@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<World>
+  <Sector>
+    <Entity name="SolidBlock" class="EntityTile">
+	    <String name="texName" value="Tiles"/>
+	    <Float name="u" value="4.0"/>
+	    <Float name="v" value="0.0"/>
+	    <Float name="width" value="32.0"/>
+	    <Float name="height" value="32.0"/>
+      <Integer name="isVisible" value="1"/>
+      <Integer name="isExit" value="0"/>
+      <Integer name="Harmful" value="0"/>
+      <Integer name="isFlip" value="0"/>
+      <Action name="Update" class="ActionSpriteUpdate"/>
+      <Action name="Draw" class="ActionSpriteDraw"/>
+    </Entity>
+  </Sector>
+</World>

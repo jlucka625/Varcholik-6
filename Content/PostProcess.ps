@@ -1,0 +1,65 @@
+#version 330 core
+in vec2 TexCoords;
+out vec4 color;
+
+//The scene rendered to texture
+uniform sampler2D scene;
+
+//Offsets used for post-processing effects
+uniform vec2 offsets[9];
+
+//Kernel used for integrating an edge effect
+uniform int edge_kernel[9];
+
+//Kernel used for integrating a blur offset
+uniform float blur_kernel[9];
+
+//Is the edge effect being used?
+uniform bool edge;
+
+//Is the blur effect being used?
+uniform bool blur;
+
+//Is the wave effect being used?
+uniform bool wave;
+
+//The time variable taken over time
+uniform float time;
+
+void main()
+{
+	color = vec4(0.0f);
+	vec3 sample[9];
+
+	if(edge)
+	{
+		for(int i = 0; i < 9; ++i)
+		{
+			sample[i] = vec3(texture(scene, TexCoords.st + offsets[i]));
+
+			color += vec4(sample[i] * edge_kernel[i], 0.0f);
+		}
+		color.a = 1.0f;	
+	}
+	else if(blur)
+	{
+		for(int i = 0; i < 9; ++i)
+		{
+			sample[i] = vec3(texture(scene, TexCoords.st + offsets[i]));
+
+			color += vec4(sample[i] * blur_kernel[i], 0.0f);
+		}
+		color.a = 1.0f;	
+	}
+	else if(wave)
+	{
+		vec2 waveTex = TexCoords;
+		waveTex.s += sin(waveTex.t * 4 * 2 * 3.14159 + time) / 100.0f;
+		color = texture(scene, waveTex);
+	}
+	else
+	{
+		color = texture(scene, TexCoords);
+	}
+
+}
